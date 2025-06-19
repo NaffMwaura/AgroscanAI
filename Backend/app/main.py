@@ -4,7 +4,7 @@ from fastapi import FastAPI, UploadFile, File # <--- NEW: Import UploadFile and 
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Dict, Any # <--- NEW: Import Dict, Any for type hints
 import io # <--- NEW: For handling image bytes
-from PIL import Image # <--- NEW: For basic image processing (install Pillow if you haven't)
+from PIL import Image # <--- NEW: For basic image processing 
 
 app = FastAPI(
     title="Agroscan AI Backend",
