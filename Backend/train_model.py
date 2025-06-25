@@ -11,6 +11,7 @@ from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
 import os
 import shutil # Still useful for general file operations if needed
 
+
 print(f"TensorFlow Version: {tf.__version__}")
 # Check for GPU
 physical_devices = tf.config.experimental.list_physical_devices('GPU')
@@ -163,6 +164,7 @@ early_stopping_callback = EarlyStopping(
 )
 
 callbacks = [model_checkpoint_callback, early_stopping_callback]
+
 
 
 # --- 5. Train the Model ---
